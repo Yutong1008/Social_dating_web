@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>Dating web</title>
+    <style type="text/css" rel="stylesheet">
+      fieldset {
+        background: #ffffe0;
+        border: 10px solid yellow;
+        margin-bottom: 10px;
+        width: 720px;
+      }
+
+      label {
+        width: 180px;
+        display: inline-block;
+        text-align: right;
+        vertical-align: top;
+      }
+
+      label:hover {
+        font-size: 28px;
+      }
+
+      span {
+        text-align: center;
+        vertical-align: top;
+      }
+
+      textarea {
+        width: 360px;
+        height: 50px;
+      }
+
+      .left {
+        background: red;
+        color: white;
+      }
+
+      .right {
+        background: purple;
+        color: white;
+      }
+
+      #method {
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Please Enter Your Details For Our Dating Website!</h1>
+    <form action="information"></form>
+    <fieldset>
+      <legend>Your Face</legend>
+      <label for="image">Your image: </label>
+      <input type="file" name="fileToUpload" required /><br />
+      <label for="preview">Image preview: </label>
+    </fieldset>
+    <fieldset>
+      <legend>Your General Details</legend>
+      <label for="fname">Name: </label>
+      <input type="text" name="uname>" /><br />
+      <label for="Gender">Gender: </label>
+      <input type="radio" />Male <input type="radio" />Female <br />
+      <label for="age">Age: </label>
+      <input type="number" age="number" /><br />
+      <label for="Date of Birth">Date of Birth: </label>
+      <input type="date" id="'birthday" name="birthday" /><br />
+      <label for="color">Favorite color: </label>
+      <input type="color" name="color" /><br />
+      <label for="country">Which contry: </label>
+      <select name="countries"></select>
+    </fieldset>
+    <fieldset>
+      <legend>Your Indicators</legend>
+      <label for="height">Height</label>
+      <span class="left"> Short</span>
+      <input type="range" min="0" max="100" value="50" name="height" />
+      <span class="right">Tall</span><br />
+      <label for="salary">Salary</label>
+      <span class="left"> Poor</span>
+      <input type="range" min="0" max="100" value="50" name="salary" />
+      <span class="right">Rich</span>
+    </fieldset>
+    <fieldset>
+      <legend>Your Contact Information</legend>
+      <label for="email">Email: </label>
+      <input type="email" id="email" name="email" /><br />
+      <label for="mobile">Mobile: </label>
+      <input type="number" mobile="number" /><br />
+      <label for="address">Adress: </label>
+      <textarea name="adress" cols="50" rows="10"></textarea><br />
+      <label for="method">Method to contact you: </label>
+      <input type="checkbox" />Email <br />
+      <input type="checkbox" />Whatsapp <br />
+      <input type="checkbox" />In-app chat <br />
+    </fieldset>
+    <br />
+    <input type="submit" value="Submit!" />
+  </body>
+</html>
+
